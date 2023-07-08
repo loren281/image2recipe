@@ -37,7 +37,7 @@ You can modify the hyperparameters and the architecture as you wish.
 
 - Make sure to: modify the path in which the final model will be saved at.
 - After this step you will have a file called "final_model.pth".
-- Alternatively, you download our pretrained model [here](https://drive.google.com/file/d/1X1IjTZsnPwVZRU6vFwbnoZ3coscnMqHZ/view?usp=sharing)
+- Alternatively, you can download our pretrained model [here](https://drive.google.com/file/d/1X1IjTZsnPwVZRU6vFwbnoZ3coscnMqHZ/view?usp=sharing)
 
 2. **Generate dataset embeddings**
 
