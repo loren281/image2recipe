@@ -26,8 +26,6 @@ We are using the [Recipe1M](http://im2recipe.csail.mit.edu/) dataset which is no
 
 ## Running Instructions
 
-Make sure to modify all paths to match your work area.
-
 1. **Train the model**
 
 - Run the code: ```/preparation/transer_learning_densenet121.ipynb```
@@ -35,7 +33,7 @@ Make sure to modify all paths to match your work area.
 This code uses the pretrained DenseNet121, while replacing its last layer with a fully-connected layer of size 101.
 You can modify the hyperparameters and the architecture as you wish.
 
-- Make sure to: modify the path in which the final model will be saved at.
+- Make sure to modify the path in which the final model will be saved at.
 - After this step you will have a file called "final_model.pth".
 - Alternatively, you can download our pretrained model [here](https://drive.google.com/file/d/1X1IjTZsnPwVZRU6vFwbnoZ3coscnMqHZ/view?usp=sharing)
 
@@ -45,14 +43,14 @@ You can modify the hyperparameters and the architecture as you wish.
 
 This code generates the embeddings for the entire dataset.
 
-- Make sure to: create a directory to store the embeddings, and modify paths.
+- Make sure to create a directory to store the embeddings, and modify paths.
 - After this step you will have the dataset's embeddings.
 
 3. **Generate and display top recipes and images**
 
 - Run the code: ```/codes/image2recipe.ipynb```
 
-- Make sure to: modify paths including the desired input image path, and choose number of recipes to display.
+- Make sure to modify paths including the desired input image path, and choose number of recipes to display.
 - After this step the desired recipes will be displayed.
 
 ## Evaluation Instructions
