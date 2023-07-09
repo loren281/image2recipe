@@ -1,9 +1,9 @@
 # image2recipe
 
 An implementation of image2recipe - a deep learning based system that outputs the recipe of a given food image.
-We use DenseNet121 pretrained on ImageNet, and through the technique of transfer learning we further train the model on the Food-101 dataset, to enhance its ability to understand food-related features.
-This model is used for generating the embeddings for the dataset's images.
-Given an input image, we search for the closest embeddings to its embedding, and output the recipes of those top images. 
+We use DenseNet121 pretrained on ImageNet, and using transfer learning we further train the model on the Food-101 dataset, to enhance its ability to understand food-related features.
+This model is then used for generating the embeddings for the dataset's images.
+Finally, given an input image, we search for the closest embeddings to its embedding, and display the recipes of those top matches. 
 
 ## Repository Organization
 
