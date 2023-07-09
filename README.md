@@ -45,7 +45,7 @@ You can modify the hyperparameters and the architecture as you wish.
 
 This code generates the embeddings for the entire dataset.
 
-- Make sure to: create a directory to store the embeddings and modify paths.
+- Make sure to: create a directory to store the embeddings, and modify paths.
 - After this step you will have the dataset's embeddings.
 
 3. **Generate and display top recipes and images**
@@ -53,7 +53,18 @@ This code generates the embeddings for the entire dataset.
 - Run the code: ```/codes/image2recipe.ipynb```
 
 - Make sure to: modify paths including the desired input image path, and choose number of recipes to display.
-- After this step the desired recipes will be displayed. 
+- After this step the desired recipes will be displayed.
+
+## Evaluation Instructions
+
+- We randomly chose 1000 pairs of images, each pair associated with the same recipe.
+  We generated an embedding for each of the images, and then calculated the similarity
+  between each pair of embeddings using cosine similarity metric.
+- In order to create a directory with such pairs of images, you can run this code: ```/evaluation/download_eval_images.py```
+
+This code downloads the pairs of images using layer2.json (which is part of the Recipe1M dataset).
+If you already have test images you only need to arrange them in pairs (named recipeId_1, recipeId_2).
+- Once you have the pairs of images, run the code: ```/evaluation/evaluate_model.py``` to calculate the similarity score.
 
 ## References
 
